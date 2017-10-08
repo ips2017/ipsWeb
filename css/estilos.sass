@@ -1,1 +1,64 @@
 @import "scss/bootstrap"
+
+$n-intr-bkg-color01: #FF9538
+$n-sec-header-text-color01: #FFF
+$n-sec-header-line-color01: $n-sec-header-text-color01
+$n-sec-header-text-color02: #000
+$n-sec-header-line-color02: $n-sec-header-text-color02
+
+.n-navbar-nav
+	padding-top: 15px
+	li
+		@extend .float-left
+		@extend .navbar-nav
+		@extend .nav-item
+		a
+			@extend .nav-link
+			padding: 8px
+			font-size: 18px
+			color: #777
+		a:hover
+			text-decoration: underline
+.n-navbar-brand
+	@extend .navbar-brand
+	padding-top: 5px
+	padding-bottom: 5px
+.n-navbar
+	@extend .navbar
+	padding: 0px
+.slider
+	padding: 0px
+	img
+		max-height: 420px
+@media (max-height: 520px)
+	.slider
+		img
+			max-height: 250px
+section
+	margin-left: -15px
+	margin-right: -15px
+	display: block
+#u-intro
+	background-color: $n-intr-bkg-color01
+.n-sec-header01
+	color: $n-sec-header-text-color01
+	hr
+		border-color: $n-sec-header-line-color01
+.n-sec-header02
+	color: $n-sec-header-text-color02
+	hr
+		border-color: $n-sec-header-line-color02
+
+.n-cab
+	padding-top: 10px
+	padding-bottom: 10px
+	text-align: center
+	hr
+		width: 20%
+		padding: 10px
+
+@media (min-width: 992px)
+	section
+		>header
+			width: 66.6667%
+			margin-left: 16.6667%
