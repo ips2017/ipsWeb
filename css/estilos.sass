@@ -1,4 +1,7 @@
 @import "scss/bootstrap"
+@import "open-iconic-bootstrap"
+@import "open-iconic-foundation"
+@import "open-iconic"
 
 $n-intr-bkg-color01: #FF9538
 $n-sec-header-text-color01: #FFF
@@ -62,3 +65,29 @@ section
 		>header
 			width: 66.6667%
 			margin-left: 16.6667%
+.servicios
+	@extend .row
+	margin: 0px auto
+
+.box-container
+	.box
+		.image
+			background-color: #FF9538
+			width: 80px
+			height: 80px
+			margin: auto
+			text-align: center
+			border-radius: 50%
+			line-height: 85px
+			.fi
+				font-size: 36px
+				display: inline-block
+				//margin-left: 2px
+				color: #FFF
+				-webkit-font-smoothing: antialiased
+		.info
+			margin-top: 8px
+			h4,p
+				text-align: center
+			h4
+				font-size: 18px
