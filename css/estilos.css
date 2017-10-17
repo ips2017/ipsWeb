@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.0.0-beta (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -8750,5 +8751,21 @@ section {
   .n-foot small {
     padding-top: 15px;
     display: inline-block; }
+
+/*Estilo de prueba */
+@font-face {
+  font-family: "ips";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ips-serif.ttf") format("truetype"); }
+.n-prueba {
+  font-family: "ips";
+  font-size: 150px;
+  line-height: 150px; }
+
+.n-prueba:before {
+  content: ""; }
+
+/***************** */
 
 /*# sourceMappingURL=estilos.css.map */
